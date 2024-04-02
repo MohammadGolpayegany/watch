@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lora;
+}
+@font-face{
+  font-family: lora;
+  src: url('../css/font/Lora-VariableFont_wght.ttf') format('opentype');
+}
+main {
+  width: 100%;
+  overflow-x: hidden;
+  > nav {
+    background-color: white;
+    top: 0;
+    position: fixed;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.534);
+    > .row {
+      >div{
+        display: flex;
+        justify-content: end;
+        >.ham{
+          width: 50px;
+          height: 40px;
+          display: flex;
+          flex-wrap: wrap;
+          overflow: hidden;
+          cursor: pointer;
+          >span{
+            display: flex;
+            width: 90%;
+            height: 2px;
+            background-color:black;
+            align-content: space-evenly;
+            justify-content: center;
+            transform-origin: left;
+            transition: 0.3s linear all;
+          }
+        }
+      }
+      > ul {
+        > li {
+          transition: 0.3 linear;
+        }
+        > li:first-of-type {
+          background-color: #8019c8 !important;
+          color: white;
+        }
+        > li:hover {
+          background-color: #8019c8;
+          color: white;
+        }
+      }
+      > #link {
+        > i {
+          color: #8019c8;
+          font-size: 15px;
+          transition: 0.3s;
+        }
+        > :first-of-type:hover {
+          transform: scale3d(1.2, 1.2, 1);
+        }
+        > :last-of-type:hover {
+          transform: scale3d(1.2, 1.2, 1);
+        }
+      }
+      >.mob{
+        display: none;
+        transition: 0.5s all linear;
+        >ul{
+          width: 100%;
+          >li{
+            margin: 20px 0;
+            >a
+            {
+              padding: 10px;
+              transition: 0.3s all linear;
+            }
+            :hover{
+              background-color: #8019c8 !important;
+              color: white;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  > #wall {
+    min-height: 92vh;
+    background-image: url("../img/slider-bg.jpg");
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    > .baneer {
+      > .row {
+        > .matn {
+          > .linkk {
+            margin-top: 30px;
+            > a:first-of-type {
+              background-color: #19c880;
+              transition: 0.3s linear;
+            }
+            > a:last-of-type {
+              transition: 0.3s linear;
+              background-color: #8019c8;
+            }
+            > a:first-of-type:hover {
+              background-color: #118454;
+            }
+            > a:last-of-type:hover {
+              background-color: #541184;
+            }
+          }
+        }
+      }
+    }
+  }
+  > #post {
+    > #postservice {
+      > .row {
+        > .item {
+          > img {
+            transition: 0.3s linear;
+          }
+          > img:hover {
+            transform: scale(1.1, 1.1);
+          }
+        }
+      }
+    }
+  }
+  > #aboute {
+    margin-top: 70px;
+    > .about {
+      > .row {
+        > img {
+          width: 300px;
+          height: 300px;
+        }
+        > div {
+          width: 600px;
+          height: 300px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-end;
+          > * {
+            margin: 15px 0;
+          }
+          > h2 {
+            font-size: 25px;
+            color: #0c0c0c;
+          }
+          > p {
+            color: #0c0c0c;
+            font-size: 18px;
+          }
+          > :last-child {
+            transition: 0.3s linear;
+            background-color: #8019c8;
+            border-radius: 5px;
+          }
+          > :last-child:hover {
+            background-color: #541184;
+          }
+        }
+      }
+    }
+  }
+  > #sales {
+    margin: 70px 0;
+    > .sale {
+      > .row {
+        > .cardsale {
+          margin: 0 auto;
+          > .cardtop {
+            > .cardimg {
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              > img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+                transition: 0.3s;
+              }
+              > img:hover {
+                transform: scale(1.1) rotate(5deg);
+              }
+            }
+            > .cardtext {
+              display: flex;
+              justify-content: space-between;
+              > * {
+                color: #0c0c0c;
+              }
+            }
+          }
+          > .cardbutton {
+            display: flex;
+            justify-content: center;
+            > :first-child {
+              background-color: #8019c8;
+              transition: 0.3s linear;
+              border-radius: 5px;
+            }
+            > :first-child:hover {
+              background-color: #541184;
+            }
+          }
+        }
+      }
+    }
+  }
+  > #contacts {
+    > .contact {
+      > .row {
+        > .contacttitle {
+          > h4 {
+            color: #0c0c0c;
+            margin-bottom: 25px;
+          }
+        }
+        > .row {
+          > .contactform {
+            > .form {
+              display: flex;
+              flex-wrap: wrap;
+              > input {
+                margin: 10px 0;
+                padding: 15px 5px;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.11);
+                &:focus {
+                  outline: 1px solid black;
+                }
+                &::placeholder {
+                  font-size: 17px;
+                  color: #0c0c0c;
+                  padding: 10px;
+                }
+              }
+              > textarea {
+                padding: 15px 10px;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.11);
+              }
+              * {
+                width: 100%;
+              }
+              > button {
+                width: 140px;
+                display: flex;
+                border-radius: 5px;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                background-color: #8019c8;
+                margin: 35px 0 0 0;
+                transition: 0.3s linear;
+                &:hover {
+                  background-color: #541184;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > #Testimonials {
+    > .Testimonial {
+      > .row {
+        > .titeltest {
+        }
+        > .testbody {
+          > .row {
+            padding: 50px 120px;
+            > .testimg {
+              padding: 10px;
+              > img {
+                outline: 6px solid #19c880;
+                width: 170px;
+                height: 170px;
+              }
+            }
+            > .testtext {
+              padding: 10px;
+              > .texttop {
+                > .clientname {
+                  > h5 {
+                    color: #8019c8;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                  }
+                  > h6 {
+                    color: #19c880;
+                    text-transform: uppercase;
+                  }
+                }
+                > i {
+                  font-size: 30px;
+                  color: #8019c8;
+                  font-weight: bold;
+                }
+              }
+              > .testparag {
+                padding: 10px;
+                margin: 25px 0;
+                > p {
+                  line-height: 1.5;
+                  color: #0c0c0c;
+                  word-break: break-all;
+                  text-align: justify;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  > #footers {
+    background-color: #0f1521;
+    color: white;
+    > .footer {
+      > .row {
+        > h2 {
+          border-bottom: 3px solid white;
+        }
+      }
+    }
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+i {
+  cursor: pointer;
+}

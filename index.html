@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bot/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <nav class="container-fluid my-0">
+        <div class="row">
+          <span class="py-3 fs-4  align-items-center col-6 col-lg-2">
+            HANDTIME
+          </span>
+          <ul
+            class="py-3 d-none m-0 d-lg-flex col-lg-8 justify-content-center align-items-center"
+          >
+            <li class="px-4 py-2 rounded"><a href="#">HOME</a></li>
+            <li class="px-4 py-2 rounded"><a href="#">ABOUT</a></li>
+            <li class="px-4 py-2 rounded"><a href="#">PRODUCT</a></li>
+            <li class="px-4 py-2 rounded"><a href="#">TESTIMONIAL</a></li>
+            <li class="px-4 py-2 rounded"><a href="#">CONTACT US</a></li>
+          </ul>
+          <div
+            class="py-3 d-none d-lg-flex col-lg-2 justify-content-end pe-5 align-items-center"
+            id="link"
+          >
+            <i class="bi bi-person-fill px-1"></i>
+            <i class="bi bi-cart-fill px-1"></i>
+          </div>
+          <div class="col-6 py-3 text-end  d-lg-none">
+            <!-- <i class="bi bi-list fs-2 fw-bold" id="hamber" onclick="togglehamber()"></i> -->
+            <div onclick="togglehamber()" class="ham">
+              <span></span>
+              <span></span> 
+              <span></span>
+            </div>
+          </div>
+          <div class="mob d-lg-none">
+            <ul class="d-flex flex-wrap">
+              <li class="px-4 py-2 rounded w-100 text-center"><a href="#">HOME</a></li>
+              <li class="px-4 py-2 rounded w-100 text-center"><a href="#">ABOUT</a></li>
+              <li class="px-4 py-2 rounded w-100 text-center"><a href="#">PRODUCT</a></li>
+              <li class="px-4 py-2 rounded w-100 text-center"><a href="#">TESTIMONIAL</a></li>
+              <li class="px-4 py-2 rounded w-100 text-center"><a href="#">CONTACT US</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="container-fluid" id="wall">
+        <div class="baneer container-fluid container-xxl">
+          <div class="row">
+            <div class="matn w-100 py-5">
+              <h1 class="text-white">STYLISH WATCHES</h1>
+              <p class="text-white">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.dolor
+                sit amet consectetur adipisicing
+              </p>
+              <div class="linkk">
+                <a href="" class="text-white px-5 py-2">Contact US</a>
+                <a href="" class="text-white px-5 py-2">About Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w100" id="post">
+        <div class="container-fluid container-xxl" id="postservice">
+          <div class="row container-fluid container-xxl">
+            <div class="item col-12 my-3 col-md-6 col-lg-3 text-center">
+              <img src="./img/feature-1.png" alt="" />
+              <h5>FAST DELIVERY</h5>
+              <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+            <div class="item col-12 my-3 col-md-6 col-lg-3 text-center">
+              <img src="./img/feature-2.png" alt="" />
+              <h5>FAST DELIVERY</h5>
+              <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+            <div class="item col-12 my-3 col-md-6 col-lg-3 text-center">
+              <img src="./img/feature-3.png" alt="" />
+              <h5>FAST DELIVERY</h5>
+              <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+            <div class="item col-12 my-3 col-md-6 col-lg-3 text-center">
+              <img src="./img/feature-4.png" alt="" />
+              <h5>FAST DELIVERY</h5>
+              <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid" id="aboute">
+        <div class="about container-fluid container-xxl">
+          <div class="row container-fluid container-xxl justify-content-center">
+            <img src="./img/a-1.jpg" class="my-2 col-12 col-md-4" />
+            <img src="./img/a-2.jpg" class="my-2 col-12 col-md-4" />
+            <div class="col-12 align-content-center col-md-4">
+              <h2 class="fw-bold">About Our Shop</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum There are
+                many variations of passages of Lorem Ipsum
+              </p>
+              <a href="#" class="text-white px-5 py-2">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid" id="sales">
+        <div class="sale container-fluid container-xxl">
+          <div class="row justify-content-center container-fluid container-xxl">
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w1.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w2.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w3.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid" id="sales">
+        <div class="sale container-fluid container-xxl">
+          <div class="row justify-content-center container-fluid container-xxl">
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w4.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w5.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w6.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid" id="sales">
+        <div class="sale container-fluid container-xxl">
+          <div class="row justify-content-center container-fluid container-xxl">
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w7.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w8.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+            <div class="cardsale px-3 py-3 col-12 my-2 col-md-6 col-lg-3">
+              <div class="cardtop">
+                <div class="cardimg">
+                  <img src="./img/w9.png" alt="" />
+                </div>
+                <div class="cardtext">
+                  <div class="text">
+                    <h5>Men's Watch</h5>
+                    <h6 class="text-center"><span>$</span>300</h6>
+                  </div>
+                  <div id="linkstar">
+                    <h5 class="text-center">Like</h5>
+                    <div class="iconstar d-flex justify-content-center">
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                      <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cardbutton py-2">
+                <a href="#" class="text-white px-5 py-2">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid" id="contacts">
+        <div class="contact container-fluid container-xxl">
+          <div class="row justify-content-center container-fluid container-xxl">
+            <div class="contacttitle w-100">
+              <h4 class="fw-bold fs-5">COCNTACT US</h4>
+            </div>
+            <div class="row w-100 px-0 d-flex">
+              <div class="contactform px-0 col-12 col-md-6">
+                <form action="" class="form px-2 py-3">
+                  <input type="text" placeholder="Your Name.." />
+                  <input type="text" placeholder="Phone Number.." />
+                  <input type="email" placeholder="Email.." />
+                  <textarea
+                    name=""
+                    id=""
+                    cols="10"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                  <button class="text-white px-5 py-2">SEND</button>
+                </form>
+              </div>
+              <div class="contatctmap px-3 col-12 col-md-6">
+                <iframe
+                  class="col-12 w-100 col-md-6"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2568.827111298201!2d-2.234875748418095!3d53.4797360277518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1710355333262!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid" id="Testimonials">
+        <div class="Testimonial container-fluid container-xxl">
+          <div class="row justify-content-center container-fluid container-xxl">
+            <div
+              class="titeltest my-5 d-flex justify-content-center align-content-center w-100"
+            >
+              <h4 class="fw-bold fs-5">Testimonial</h4>
+            </div>
+            <div class="testbody">
+              <div class="row">
+                <div
+                  class="testimg d-flex justify-content-center align-content-center col-12 col-md-5 col-lg-2 d-flex align-content-center align-items-center"
+                >
+                  <img src="./img/person1.jpg" class="rounded-circle" alt="" />
+                </div>
+                <div class="testtext col-12 col-md-7 col-lg-10">
+                  <div
+                    class="texttop d-flex justify-content-between align-items-center px-3 py-4 w-100"
+                  >
+                    <div class="clientname">
+                      <h5 class="py-0 fw-bold">Morojink</h5>
+                      <h6 class="py-0 fw-bold">Customer</h6>
+                    </div>
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="testparag col-12 w-100">
+                    <p class="col-12 w-100">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facere vel, facilis ut culpa rem a unde dignissimos
+                      similique quam amet doloremque alias nemo corrupti aut
+                      praesentium repellendus! Facilis alias ex aliquid
+                      voluptatibus itaque. Optio nemo corporis adipisci deleniti
+                      non eaque id culpa, magnam saepe unde, aliquam voluptatum,
+                      dignissimos vero atque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="container-fluid" id="footers">
+        <div class="footer container-fluid container-xxl">
+          <div class="row">
+            <h2
+              class="w-100 py-3 my-5 fs-3 d-flex justify-content-center align-items-center"
+            >
+              HANDTIME
+            </h2>
+          </div>
+          <div class="row">
+            <div class="mx-0 py-3 col-12 col-md-6 col-lg-3">
+              <h5 class="mx-2">About Shop</h5>
+              <div class="d-flex">
+                <i class="bi bi-geo-alt-fill mx-2"></i>
+                <p>Address</p>
+              </div>
+              <div class="d-flex">
+                <i class="bi bi-phone-fill mx-2"></i>
+                <p>123-456-789</p>
+              </div>
+              <div class="d-flex">
+                <i class="bi bi-envelope-fill mx-2"></i>
+                <p>mohammadgolpa@gmail.com</p>
+              </div>
+            </div>
+            <div class="py-3 col-12 col-md-6 col-lg-3">
+              <h5>Informations</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, totam. Natus maxime deserunt libero consequuntur
+                fugit facilis cumque maiores modi!
+              </p>
+            </div>
+            <div class="py-3 col-12 col-md-6 col-lg-3">
+              <h5>Instagram</h5>
+              <div class="row">
+                <div
+                  class="col-4 border border-2 border-dark bg-white d-flex justify-content-center align-content-center"
+                >
+                  <a href="#">
+                    <img src="./img/w1.png" width="30" height="50" alt="" />
+                  </a>
+                </div>
+                <div
+                  class="col-4 border border-2 border-dark bg-white d-flex justify-content-center align-content-center"
+                >
+                  <a href="#">
+                    <img src="./img/w2.png" width="30" height="50" alt="" />
+                  </a>
+                </div>
+                <div
+                  class="col-4 border border-2 border-dark bg-white d-flex justify-content-center align-content-center"
+                >
+                  <a href="#">
+                    <img src="./img/w3.png" width="30" height="50" alt="" />
+                  </a>
+                </div>
+                <div
+                  class="col-4 border border-2 border-dark bg-white d-flex justify-content-center align-content-center"
+                >
+                  <a href="#">
+                    <img src="./img/w4.png" width="30" height="50" alt="" />
+                  </a>
+                </div>
+                <div
+                  class="col-4 border border-2 border-dark bg-white d-flex justify-content-center align-content-center"
+                >
+                  <a href="#">
+                    <img src="./img/w5.png" width="30" height="50" alt="" />
+                  </a>
+                </div>
+                <div
+                  class="col-4 border border-2 border-dark bg-white d-flex justify-content-center align-content-center"
+                >
+                  <a href="#">
+                    <img src="./img/w6.png" width="30" height="50" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 col-12 col-md-6 col-lg-3">
+              <h5>Newsletter</h5>
+              <input
+                type="text"
+                placeholder="Enter Your Email"
+                class="w-100 my-1 px-2 py-2"
+              />
+              <a
+                href=""
+                class="w-100 my-3 px-3 py-1"
+                style="background-color: #8019c8"
+                >Subscribe</a
+              >
+              <div class="row my-1 px-5 py-2 d-flex justify-content-center">
+                <i class="bi bi-facebook col-3 fs-4"></i>
+                <i class="bi bi-twitter col-3 fs-4"></i>
+                <i class="bi bi-linkedin col-3 fs-4"></i>
+                <i class="bi bi-youtube col-3 fs-4"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      let i = 3
+      let _span = document.querySelectorAll('main>nav>.row>div>.ham>span')
+      let mob = document.getElementsByClassName('mob')[0]
+      function togglehamber(){
+        if(i % 2){
+          _span[1].style.transform='translateX(100px)'
+          _span[0].style.transform='rotate(37deg)'
+          _span[2].style.transform='rotate(-37deg)'
+          mob.style.display='flex'
+        }
+        else{
+          mob.style.display='none'
+          _span[1].style.transform='translateX(0)'
+          _span[0].style.transform='rotate(0deg)'
+          _span[2].style.transform='rotate(0deg)'
+        }
+        i++
+      }
+    </script>
+    <script src="./css/js/bootstrap.min.js"></script>
+  </body>
+</html>
